@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Satoshi's Website</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">SATOSHI</div>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">CBT Registration</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Home -->
+    <section class="hero" id="home">
+
+        <h1>Welcome to Satoshi's World 🌍</h1>
+
+        <p>
+            Welcome to my first personal website.
+            I'm learning how to build websites.
+        </p>
+
+        <a href="#about" class="btn">Learn More</a>
+
+    </section>
+
+
+    <!-- About -->
+    <section class="hero" id="about">
+
+        <h1>About Me</h1>
+
+        <p>
+            I'm a student learning web development.
+            This website is one of my first projects.
+        </p>
+
+    </section>
+
+
+    <!-- Skills -->
+    <section id="skills" class="hero">
+
+        <h1>My Skills</h1>
+
+        <div class="skills-container">
+
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Web Design</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Projects -->
+    <section class="hero" id="projects">
+
+        <h1>My Projects</h1>
+
+        <div class="project-card">
+
+            <h2>My First Website</h2>
+
+            <p>
+                This is my first personal website built
+                with HTML, CSS, and JavaScript.
+            </p>
+
+            <button onclick="alert('This is my first website project! 🚀')">
+                View Project
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- CBT Registration -->
+    <section class="hero" id="contact">
+
+        <h1>CBT Registration</h1>
+
+        <p>
+            Fill in your details below to register
+            for your CBT examination.
+        </p>
+
+
+        <!-- Registration Form -->
+    <div class="registration-box">
+
+    <h2>Register for CBT</h2>
+
+    <p>
+        Click the button below to complete your CBT registration.
+    </p>
+
+    <a
+        href="https://forms.gle/J6VBRM8nzqiiUiEb9"
+        target="_blank"
+        class="btn"
+    >
+        Register for CBT
+    </a>
+
+</div>
+
+        </form>
+
+
+        <!-- Payment Section -->
+        <div id="paymentSection" style="display: none;">
+
+            <h2>Payment Details</h2>
+
+            <p>
+                Your CBT registration has been received.
+            </p>
+
+            <p>
+                <strong>Registration Fee: ₦5,000</strong>
+            </p>
+
+
+            <div class="payment-box">
+
+                <p>
+                    <strong>Bank:</strong>
+                    YOUR BANK NAME
+                </p>
+
+                <p>
+                    <strong>Account Name:</strong>
+                    YOUR ACCOUNT NAME
+                </p>
+
+                <p>
+                    <strong>Account Number:</strong>
+                    0000000000
+                </p>
+
+                <p>
+                    <strong>Payment Reference:</strong>
+                    <span id="paymentReference"></span>
+                </p>
+
+            </div>
+
+
+            <p>
+                After making the payment, click the button
+                below to confirm that you have completed
+                the payment.
+            </p>
+
+
+            <button
+                type="button"
+                onclick="confirmPayment()"
+            >
+                I Have Made Payment
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

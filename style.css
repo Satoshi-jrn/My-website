@@ -1,0 +1,314 @@
+/* =========================
+   BASIC RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: white;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 8%;
+
+    background: #000;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #00ffcc;
+}
+
+
+/* =========================
+   GENERAL SECTIONS
+========================= */
+
+.hero {
+    min-height: 80vh;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 60px 20px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    max-width: 700px;
+    line-height: 1.6;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn,
+button {
+    background: white;
+    color: black;
+
+    padding: 14px 30px;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    text-decoration: none;
+}
+
+.btn:hover,
+button:hover {
+    background: #00ffcc;
+}
+
+
+/* =========================
+   SKILLS
+========================= */
+
+.skills-container {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+
+    margin-top: 30px;
+}
+
+.skill {
+    background: #222;
+
+    padding: 20px 30px;
+
+    border-radius: 10px;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    border: 1px solid #444;
+}
+
+.skill:hover {
+    transform: translateY(-5px);
+    border-color: #00ffcc;
+}
+
+
+/* =========================
+   PROJECT
+========================= */
+
+.project-card {
+    background: #222;
+
+    padding: 30px;
+
+    max-width: 500px;
+
+    border-radius: 15px;
+
+    border: 1px solid #444;
+
+    margin-top: 20px;
+}
+
+.project-card h2 {
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    font-size: 17px;
+}
+
+
+/* =========================
+   CBT REGISTRATION FORM
+========================= */
+
+#contact {
+    min-height: 100vh;
+}
+
+#registrationForm {
+    width: 100%;
+    max-width: 500px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+
+    text-align: left;
+}
+
+#registrationForm label {
+    font-weight: bold;
+
+    margin-top: 10px;
+}
+
+#registrationForm input,
+#registrationForm select {
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    background: white;
+    color: black;
+}
+
+#registrationForm button {
+    margin-top: 20px;
+}
+
+
+/* =========================
+   PAYMENT SECTION
+========================= */
+
+#paymentSection {
+    width: 100%;
+    max-width: 500px;
+
+    margin-top: 50px;
+
+    padding: 30px;
+
+    background: #222;
+
+    border-radius: 15px;
+
+    border: 1px solid #444;
+
+    text-align: center;
+}
+
+#paymentSection h2 {
+    margin-bottom: 20px;
+}
+
+#paymentSection p {
+    font-size: 17px;
+}
+
+.payment-box {
+    background: #111;
+
+    padding: 20px;
+
+    margin: 20px 0;
+
+    border-radius: 10px;
+
+    text-align: left;
+}
+
+.payment-box p {
+    margin-bottom: 12px;
+}
+
+#paymentReference {
+    color: #00ffcc;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    nav {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    nav ul {
+        gap: 12px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    #registrationForm {
+        max-width: 100%;
+    }
+
+}
